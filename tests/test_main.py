@@ -12,5 +12,6 @@ def test_correo_valido ():
         assert validar_correo ("prueba@") == False
         assert validar_correo ("prueba.com") == False
         assert validar_correo ("caminos@caminos,com") == False
+        assert validar_correo ("@@caminos.com") == False
 
         

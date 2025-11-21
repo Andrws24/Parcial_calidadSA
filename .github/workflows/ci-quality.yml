@@ -1,0 +1,42 @@
+name:  CI Quality
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    build-test-lint:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout repo
+          uses: actions/checkout@v2
+        
+        - name: Setup Python
+          uses: actions/setup-python@v2
+          with:
+            python-version: '3.11'   
+         - name: Install dependencies
+         run: |
+           python -m pip install --upgrade pip
+           pip install pylint pytest coverage
+
+        - name : Linter check
+        run: pylint src tests
+
+
+        - name : Run tests with coverage
+        run: |
+          coverage run -m pytest
+          coverage report -m
+          coverage xml
+
+    #verificar covertuta >= 80%
+        - name: Check coverage threshold
+        run: |
+        
+        COVERAGE=$ (coverage report | grep TOTAL | awk '{ print $4}'| sed 's/%//') 
+        echo "Coverage is $COVERAGE%"
+        if [ "$COVERAGE" -lt 80 ]; then
+            echo "Coverage is below 80%!"
+            exit 1
+             fi
