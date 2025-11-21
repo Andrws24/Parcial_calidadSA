@@ -28,3 +28,41 @@ la diferencia se que
 la cobertura fallida - estaba en 62% era baja 
 la cobertura alta 100% esto quiere decir que ahora todos los casos que se ejecutan estan siendo subierto
 
+
+
+IA y Ética
+
+Metodo para detectar codigo generado por IA
+
+1 metodo- Analisis de patrones como consistencia muy excesiva en todo lo que dicen
+          comentarios genericos 
+          tratar de que todo sea perfecto 
+2 Metodo- Patrones similares 
+          tienen su codigo predecible
+
+Por que no es posible asegurar la autoria al 100%
+no hay algun sistema que pueda garantizar con mucha certeza si  algun codigo o texto
+s escrito por una IA o persona
+
+- La IA puede imitar estilos humanos
+- El estudiamte puede reescribir
+
+
+
+
+Politicas razonables para el uso de la IA
+
+Declarar transparencia del uso de la IA
+seria ya que el estudiante puede declarar que la uso, que parte genero o ayuda a corregir
+
+
+Herramienta de apoyo y no de sustitucion
+
+Puede que la IA explique de una forma adecuada- conceptos y ejemplos
+mientras esta no lo genere de una forma completa
+
+
+
+
+
+- 
